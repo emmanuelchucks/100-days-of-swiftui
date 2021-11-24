@@ -27,16 +27,18 @@ Directory structure
     ├── WeSplit/
     │   ├── WeSplit/
     │   │   ├── Assets.xcassets/
-    │   │   ├── ContentView.swift
     │   │   ├── Preview Content/
+    │   │   ├── Screenshots/
+    │   │   ├── ContentView.swift
     │   │   └── WeSplitApp.swift
     │   ├── WeSplit.xcodeproj
     │   └── README.md
     ├── GuessThatFlag/
     │   ├── GuessThatFlag/
     │   │   ├── Assets.xcassets/
-    │   │   ├── ContentView.swift
     │   │   ├── Preview Content/
+    │   │   ├── Screenshots/
+    │   │   ├── ContentView.swift
     │   │   └── GuessThatFlagApp.swift
     │   ├── GuessThatFlag.xcodeproj
     │   └── README.md
