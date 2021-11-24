@@ -3,41 +3,13 @@
 Going out with friends? Calculate tips and split checks easily.
 
 ## Demo
-[![WeSplit iOS demo]({image-url})]({video-url} "WeSplit iOS demo")
-
-## Features
-
-- Multi-platform (iOS, watchOS, macOS)
-- MapView integration
-- Profile page with edit functionality
-- Add landmarks to favorites
-- UIKit interop
+[iOS demo (Vimeo)](https://player.vimeo.com/video/649701488)
 
 ## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/emmanuelchucks/landmarks.git
-```
-
-Go to the project directory
-
-```bash
-  cd landmarks
-```
-
-Open in XCode
-
-```bash
-  xed .
-```
+To run this project, you will need to clone the [main repo](https://github.com/emmanuelchucks/landmarks#run-locally), go into WeSplit folder and open it in XCode.
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/emmanuelchucks/landmarks/main/Screenshots/Screenshot%202021-11-18%20at%2010.13.26%20PM.png" alt="Home screen" width="240px"/>
-<img src="https://raw.githubusercontent.com/emmanuelchucks/landmarks/main/Screenshots/Screenshot%202021-11-18%20at%2010.13.44%20PM.png" alt="Profile screen" width="240px"/>
-<img src="https://raw.githubusercontent.com/emmanuelchucks/landmarks/main/Screenshots/Screenshot%202021-11-18%20at%2010.13.52%20PM.png" alt="Edit profile screen" width="240px"/>
-<img src="https://raw.githubusercontent.com/emmanuelchucks/landmarks/main/Screenshots/Screenshot%202021-11-18%20at%2010.14.02%20PM.png" alt="List tab screen" width="240px"/>
-<img src="https://raw.githubusercontent.com/emmanuelchucks/landmarks/main/Screenshots/Screenshot%202021-11-18%20at%2010.14.07%20PM.png" alt="Filter landmarks screen" width="240px"/>
-<img src="https://raw.githubusercontent.com/emmanuelchucks/landmarks/main/Screenshots/Screenshot%202021-11-18%20at%2010.14.31%20PM.png" alt="Landmark details screen" width="240px"/>
+<img src="https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/WeSplit/Screenshots/Screenshot_2021-11-24_at_5.28.37_PM-removebg.png" alt="Main screen" width="220px"/>
+<img src="https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/WeSplit/Screenshots/Screenshot_2021-11-24_at_5.28.51_PM-removebg.png" alt="Number of people picker screen" width="220px"/>
+<img src="https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/WeSplit/Screenshots/Screenshot_2021-11-24_at_5.29.06_PM-removebg.png" alt="Tip percentage picker screen" width="220px"/>
