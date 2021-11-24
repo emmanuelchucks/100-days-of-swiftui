@@ -10,6 +10,6 @@ To run this project, you will need to clone the [main repo](https://github.com/e
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/WeSplit/Screenshots/Screenshot_2021-11-24_at_5.28.37_PM-removebg.png" alt="Main screen" width="220px"/>
-<img src="https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/WeSplit/Screenshots/Screenshot_2021-11-24_at_5.28.51_PM-removebg.png" alt="Number of people picker screen" width="220px"/>
-<img src="https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/WeSplit/Screenshots/Screenshot_2021-11-24_at_5.29.06_PM-removebg.png" alt="Tip percentage picker screen" width="220px"/>
+<img src="https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/WeSplit/Screenshots/Screenshot_2021-11-24_at_5.28.37_PM-removebg.png" alt="Main screen" width="32%"/>
+<img src="https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/WeSplit/Screenshots/Screenshot_2021-11-24_at_5.28.51_PM-removebg.png" alt="Number of people picker screen" width="32%"/>
+<img src="https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/WeSplit/Screenshots/Screenshot_2021-11-24_at_5.29.06_PM-removebg.png" alt="Tip percentage picker screen" width="32%"/>
