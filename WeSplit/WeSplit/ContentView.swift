@@ -64,7 +64,7 @@ struct ContentView: View {
                 }
                 
                 Text("Amount per person")
-                    .font(.headline)
+                    .font(.subheadline)
                 Text(totalPerPerson, format: localCurrency)
                     .font(.largeTitle)
                     .bold()
