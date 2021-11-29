@@ -12,6 +12,8 @@ struct ContentView: View {
     @State private var rootWord = ""
     @State private var newWord = ""
     
+    @State private var score = 0
+    
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
@@ -25,11 +27,27 @@ struct ContentView: View {
                 }
                 
                 Section {
+                    HStack {
+                        Text("Score")
+                        
+                        Spacer()
+                        
+                        Text("\(score)")
+                            .foregroundColor(.green)
+                    }
+                }
+                .font(.title2)
+                
+                Section {
                     ForEach(usedWords, id: \.self) { word in
                         HStack {
                             Image(systemName: "\(word.count).circle")
                             Text(word)
                         }
+                    }
+                } header: {
+                    if !usedWords.isEmpty {
+                        Text("Used words")
                     }
                 }
             }
@@ -41,6 +59,14 @@ struct ContentView: View {
             } message: {
                 Text(errorMessage)
             }
+            .toolbar {
+                Button("Restart") {
+                    startGame()
+                    score = 0
+                    newWord = ""
+                    usedWords = [String]()
+                }
+            }
         }
     }
     
@@ -49,7 +75,15 @@ struct ContentView: View {
             .lowercased()
             .trimmingCharacters(in: .whitespacesAndNewlines)
         
-        guard !answer.isEmpty else { return }
+        guard answer.count > 3 else {
+            wordError(title: "Word too short", message: "Try using a longer word!")
+            return
+        }
+        
+        guard answer != rootWord else {
+            wordError(title: "Word not allowed", message: "That's the same as the root word!")
+            return
+        }
         
         guard isOriginal(word: answer) else {
             wordError(title: "Word already used", message: "Try being more creative!")
@@ -71,6 +105,7 @@ struct ContentView: View {
         }
         
         newWord = ""
+        score += answer.count
     }
     
     func startGame() {
