@@ -22,14 +22,16 @@ struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var scoreMessage = ""
+    
     @State private var score = 0
     @State private var gameCount = 0
     @State private var alertAction = ""
     
-    var lastRound: Bool { gameCount == 8 }
+    var isLastRound: Bool { gameCount == 8 }
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Monaco", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
+    @State private var tappedFlag = ""
     
     var body: some View {
         ZStack {
@@ -62,6 +64,9 @@ struct ContentView: View {
                                 flagTapped(number)
                             } label: {
                                 FlagImage(country: countries[number])
+                                    .rotation3DEffect(.degrees(showingScore && tappedFlag == countries[number] ? 360 : 0), axis: (x: 0, y: 1, z: 0))
+                                    .opacity(showingScore && tappedFlag != countries[number] ? 0.25 : 1)
+                                    .animation(.spring(), value: gameCount)
                             }
                         }
                     }
@@ -85,11 +90,6 @@ struct ContentView: View {
         }
         .alert(scoreTitle, isPresented: $showingScore) {
             Button(alertAction) {
-                if lastRound {
-                    gameCount = 0   
-                    score = 0
-                }
-                
                 askQuestion()
             }
         } message: {
@@ -98,22 +98,28 @@ struct ContentView: View {
     }
     
     func flagTapped(_ number: Int) {
+        tappedFlag = countries[number]
         showingScore = true
         gameCount += 1
         
         if number == correctAnswer {
             score += 10
-            scoreTitle = lastRound ? "Game Over!" : "Correct!"
-            scoreMessage = lastRound ? "Your total score is \(score)" : "Your score is \(score)"
+            scoreTitle = isLastRound ? "Game Over!" : "Correct!"
+            scoreMessage = isLastRound ? "Your total score is \(score)" : "Your score is \(score)"
         } else {
-            scoreTitle = lastRound ? "Game Over!" : "Wrong!"
+            scoreTitle = isLastRound ? "Game Over!" : "Wrong!"
             scoreMessage = "That's the flog of \(countries[number])"
         }
         
-        alertAction = lastRound ? "Restart" : "Continue"
+        alertAction = isLastRound ? "Restart" : "Continue"
     }
     
     func askQuestion() {
+        if isLastRound {
+            gameCount = 0
+            score = 0
+        }
+        
         countries = countries.shuffled()
         correctAnswer = Int.random(in: 0...2)
     }
