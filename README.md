@@ -3,13 +3,15 @@
 19 projects of increasing complexity built with SwiftUI. These projects were built as part of an iOS development course taught by [Paul Hudson](https://twitter.com/twostraws) of [Hacking With Swift](https://hackingwithswift.com)
 
 ## 🚧 Progess
-This repo is still a work in progress. 2 out of 19 projects have been completed so far. Documentation might also be incomplete.
+This repo is still a work in progress. 4 out of 19 projects have been completed so far. Documentation might also be incomplete.
 
 ## List of Projects
 
 1. WeSplit
 2. GuessThatFlag
-3. ...
+3. BetterRest
+4. WordScramble
+5. ...
 
 ## Run Locally
 
