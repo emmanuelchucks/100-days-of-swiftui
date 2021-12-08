@@ -65,7 +65,7 @@ struct CheckoutView: View {
             alertMessage = "Your order of \(decodedOrder.quantity)x \(Model.Order.types[decodedOrder.type].lowercased()) cupcakes is on its way!"
         } catch {
             alertTitle = "Error"
-            alertMessage = "Checkout failed. Please try again."
+            alertMessage = error.localizedDescription
             print("Failed to check out")
         }
         
