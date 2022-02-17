@@ -1,6 +1,6 @@
 # 100 Days of SwiftUI
 
-19 projects of increasing complexity built with SwiftUI. These projects were built as part of an iOS development course taught by [Paul Hudson](https://twitter.com/twostraws) of [Hacking With Swift](https://hackingwithswift.com)
+13 projects of increasing complexity built with SwiftUI. These projects were built as part of an iOS development course taught by [Paul Hudson](https://twitter.com/twostraws) of [Hacking With Swift](https://hackingwithswift.com)
 
 ## 🚧 Progess
 
