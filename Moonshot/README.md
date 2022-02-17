@@ -4,7 +4,7 @@ A showcase of every Apollo mission.
 
 ## Demo
 
-[iOS demo (Vimeo)](https://player.vimeo.com/video/672204032?h=a2ca5d30cd)
+[iOS demo (Vimeo)](https://player.vimeo.com/video/678788274)
 
 ## Run Locally
 
