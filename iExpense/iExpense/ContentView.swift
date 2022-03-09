@@ -50,6 +50,10 @@ struct ContentView: View {
                                     AmountText(amount: item.amount)
                                 }
                                 .padding(8)
+                                .accessibilityElement()
+                                .accessibilityLabel("\(item.name) \(item.amount)")
+                                .accessibilityHint(item.type)
+                                
                             } else {}
                         }
                         .onDelete(perform: removeItems)
