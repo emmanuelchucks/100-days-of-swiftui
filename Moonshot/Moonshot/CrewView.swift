@@ -38,6 +38,7 @@ struct CrewView: View {
                     }
                 }
             }
+            .padding(.trailing)
         }
     }
 }
