@@ -42,6 +42,8 @@ struct ContentView: View {
                             withAnimation {
                                 removeCard(at: cards.firstIndex(of: card)!)
                             }
+                        } addBack: {
+                            addBackToStack(card)
                         }
                         .stacked(at: cards.firstIndex(of: card)!, in: cards.count)
                         .allowsHitTesting(cards.firstIndex(of: card)! == cards.count - 1)
@@ -135,6 +137,10 @@ struct ContentView: View {
     func removeCard(at index: Int) {
         guard index >= 0 else { return }
         cards.remove(at: index)
+    }
+    
+    func addBackToStack(_ card: Card) {
+        cards.insert(card, at: 0)
     }
     
     func resetCards() {
