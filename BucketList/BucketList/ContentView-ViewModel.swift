@@ -10,7 +10,7 @@ import MapKit
 import LocalAuthentication
 
 extension ContentView {
-    @MainActor class ViewModel: ObservableObject {
+    class ViewModel: ObservableObject {
         @Published var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 8, longitude: -1), span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5))
         @Published private(set) var locations: [Location]
         @Published var selectedPlace: Location?
