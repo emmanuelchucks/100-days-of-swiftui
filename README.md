@@ -4,7 +4,7 @@
 
 ## 🚧 Progess
 
-This repo is still a work in progress. 9 out of 13 projects have been completed so far. Documentation might also be incomplete.
+This repo is still a work in progress. 12 out of 13 projects have been completed so far. Documentation might also be incomplete.
 
 ## List of Projects
 
@@ -17,6 +17,9 @@ This repo is still a work in progress. 9 out of 13 projects have been completed 
 1. Cupcake Corner
 1. Bookworm
 1. Instafilter
+1. BucketList
+1. HotProspects
+1. Flashzilla
 1. ...
 
 ## Run Locally
