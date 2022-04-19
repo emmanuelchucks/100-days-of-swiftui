@@ -129,7 +129,7 @@ struct ProspectsView: View {
             // For production
 //            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
             // For testing
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
             
             let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
             center.add(request)
