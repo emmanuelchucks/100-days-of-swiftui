@@ -11,7 +11,7 @@ class Prospect: Identifiable, Codable, Comparable, Equatable {
     var id = UUID()
     var name = "Anonymous"
     var emailAddress = ""
-    fileprivate(set) var isConteacted = false
+    fileprivate(set) var isContacted = false
     
     static func <(lhs: Prospect, rhs: Prospect) -> Bool {
         return lhs.name < rhs.name
@@ -22,7 +22,7 @@ class Prospect: Identifiable, Codable, Comparable, Equatable {
     }
 }
 
-@MainActor class Prospects: ObservableObject {
+class Prospects: ObservableObject {
     @Published private(set) var people: [Prospect] = []
     var documentUrl: URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -51,7 +51,7 @@ class Prospect: Identifiable, Codable, Comparable, Equatable {
     
     func toggle(_ prospect: Prospect) {
         objectWillChange.send()
-        prospect.isConteacted.toggle()
+        prospect.isContacted.toggle()
         save()
     }
 }

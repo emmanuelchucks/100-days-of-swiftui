@@ -9,7 +9,7 @@ import SwiftUI
 import CodeScanner
 
 enum FilterType {
-    case none, contected, uncontacted
+    case none, contacted, uncontacted
 }
 
 enum SortOrder {
@@ -34,7 +34,7 @@ struct ProspectsView: View {
                         HStack {
                             Text(prospect.name)
                                 .font(.headline)
-                            if isEveryoneScreen == true && prospect.isConteacted {
+                            if isEveryoneScreen == true && prospect.isContacted {
                                 Image(systemName: "checkmark.circle")
                             }
                         }
@@ -42,7 +42,7 @@ struct ProspectsView: View {
                             .foregroundColor(.secondary)
                     }
                     .swipeActions {
-                        if prospect.isConteacted {
+                        if prospect.isContacted {
                             Button {
                                 prospects.toggle(prospect)
                             } label: {
@@ -154,7 +154,7 @@ struct ProspectsView: View {
         switch filter {
         case .none:
             return "Everyone"
-        case .contected:
+        case .contacted:
             return "Contacted people"
         case .uncontacted:
             return "Uncontacted people"
@@ -165,10 +165,10 @@ struct ProspectsView: View {
         switch filter {
         case .none:
             return prospects.people
-        case .contected:
-            return prospects.people.filter { $0.isConteacted }
+        case .contacted:
+            return prospects.people.filter { $0.isContacted }
         case .uncontacted:
-            return prospects.people.filter { !$0.isConteacted }
+            return prospects.people.filter { !$0.isContacted }
         }
     }
     
