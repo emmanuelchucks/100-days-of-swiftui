@@ -2,13 +2,9 @@
 
 13 projects of increasing complexity built with SwiftUI. These projects were built as part of an iOS development course taught by [Paul Hudson](https://twitter.com/twostraws) of [Hacking With Swift](https://hackingwithswift.com)
 
-## 🚧 Progess
-
-This repo is still a work in progress. 12 out of 13 projects have been completed so far. Documentation might also be incomplete.
-
 ## Completion Certificate
 
-[100 Days of SwiftUI certificate of distinction for Emmanuel Chucks](https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/certificate.jpg)
+![100 Days of SwiftUI certificate of distinction for Emmanuel Chucks](https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/certificate.jpg)
 
 ## List of Projects
 
@@ -24,7 +20,7 @@ This repo is still a work in progress. 12 out of 13 projects have been completed
 1. BucketList
 1. HotProspects
 1. Flashzilla
-1. ...
+1. SnowSeeker
 
 ## Run Locally
 
