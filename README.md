@@ -39,7 +39,6 @@ Directory structure
     │   ├── WeSplit/
     │   │   ├── Assets.xcassets/
     │   │   ├── Preview Content/
-    │   │   ├── Screenshots/
     │   │   ├── ContentView.swift
     │   │   └── WeSplitApp.swift
     │   ├── WeSplit.xcodeproj
@@ -49,7 +48,6 @@ Directory structure
     │   ├── GuessThatFlag/
     │   │   ├── Assets.xcassets/
     │   │   ├── Preview Content/
-    │   │   ├── Screenshots/
     │   │   ├── ContentView.swift
     │   │   └── GuessThatFlagApp.swift
     │   ├── GuessThatFlag.xcodeproj
