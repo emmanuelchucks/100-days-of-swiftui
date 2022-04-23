@@ -6,6 +6,10 @@
 
 This repo is still a work in progress. 12 out of 13 projects have been completed so far. Documentation might also be incomplete.
 
+## Completion Certificate
+
+[100 Days of SwiftUI certificate of distinction for Emmanuel Chucks](https://raw.githubusercontent.com/emmanuelchucks/100-days-of-swiftui/main/certificate.jpg)
+
 ## List of Projects
 
 1. WeSplit
